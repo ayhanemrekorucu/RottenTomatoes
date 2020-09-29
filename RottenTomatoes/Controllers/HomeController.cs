@@ -12,6 +12,7 @@ namespace RottenTomatoes.Controllers
     {
         public ActionResult Index(string searchQuery)
         {
+            
             return View();
         }
 
