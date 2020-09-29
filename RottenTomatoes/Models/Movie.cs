@@ -17,31 +17,13 @@ namespace RottenTomatoes.Models
         [JsonProperty("year")]
         public int Year { get; set; }
 
-        [JsonProperty("mpaa_rating")]
-        public string MpaaRating { get; set; }
-
-        [JsonProperty("runtime")]
-        public int Runtime { get; set; }
-
-        [JsonProperty("critics_consensus")]
-        public string CriticsConsensus { get; set; }
-
-        [JsonProperty("release_dates")]
-        public ReleaseDate ReleaseDates { get; set; }
-
-        [JsonProperty("ratings")]
-        public Rating Ratings { get; set; }
-
         [JsonProperty("synopsis")]
         public string Synopsis { get; set; }
 
         [JsonProperty("posters")]
-        public Poster Posters { get; set; }
-
-        [JsonProperty("abridged_cast")]
-        public List<AbridgedCast> AbridgedCast { get; set; }
+        public List<Poster> Posters { get; set; }
 
         [JsonProperty("links")]
-        public Link Links { get; set; }
+        public List<Link> Links { get; set; }
     }
 }

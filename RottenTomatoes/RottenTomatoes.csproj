@@ -124,9 +124,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AbridgedCast.cs" />
-    <Compile Include="Models\ReleaseDate.cs" />
-    <Compile Include="Models\Rating.cs" />
     <Compile Include="Models\Poster.cs" />
     <Compile Include="Models\Link.cs" />
     <Compile Include="Models\Movie.cs" />

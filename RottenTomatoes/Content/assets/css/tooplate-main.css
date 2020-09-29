@@ -248,6 +248,10 @@ a {
 	color: #fff;
 	outline: none;
 }
+
+    .subscribe-form .main-content form input::placeholder {
+        color: #e0e0e0;
+    }
 .subscribe-form .main-content form button:focus {
 	color: #fff!important;
 }

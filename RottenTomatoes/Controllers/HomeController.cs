@@ -10,13 +10,8 @@ namespace RottenTomatoes.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Index(string searchQuery)
         {
-            System.Net.WebClient client = new System.Net.WebClient();
-            string a = client.DownloadString("https://www.rottentomatoes.com/api/private/v1.0/movies?page_limit=10&page=1&q=a");
-
-            dynamic m = JsonConvert.DeserializeObject<object>(a);
-            var m2 = m["movies"];
             return View();
         }
 

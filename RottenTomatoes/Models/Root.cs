@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -7,8 +8,7 @@ namespace RottenTomatoes.Models
 {
     public class Root
     {
-        public int total { get; set; }
+        [JsonProperty("movies")]
         public List<Movie> Movies { get; set; }
-        public int MyProperty { get; set; }
     }
 }
