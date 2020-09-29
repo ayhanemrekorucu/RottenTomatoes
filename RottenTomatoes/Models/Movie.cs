@@ -21,9 +21,9 @@ namespace RottenTomatoes.Models
         public string Synopsis { get; set; }
 
         [JsonProperty("posters")]
-        public List<Poster> Posters { get; set; }
+        public Poster Poster { get; set; }
 
         [JsonProperty("links")]
-        public List<Link> Links { get; set; }
+        public Link Link { get; set; }
     }
 }

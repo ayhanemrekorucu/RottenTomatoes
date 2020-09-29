@@ -1,0 +1,72 @@
+﻿@model System.Collections.Generic.List<RottenTomatoes.Models.Movie>
+@{
+    ViewBag.Title = "Movie Page";
+}
+
+<div class="subscribe-form" style="margin-bottom: 35px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-content">
+                    <div class="container">
+                        @using (Html.BeginForm("Index", "Movie", FormMethod.Get, new { @id = "subscribe" }))
+                        {
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <fieldset>
+                                        @Html.TextBox("searchQuery", "", new { @class = "form-control", @id = "email", placeholder = "Search" })
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-2">
+                                    <fieldset>
+                                        <button type="submit" id="form-submit" class="button">Search</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="featured container no-gutter">
+    <div class="row posts">
+        @if (Model.Count > 0)
+        {
+            foreach (var movie in Model)
+            {
+                <div class="item new col-md-4">
+                    <a href="single-product.html">
+                        <div class="featured-item">
+                            <img src="@movie.Poster.Original" alt="">
+                            <h4>@movie.Title | (@movie.Year)</h4>
+                        </div>
+                    </a>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+<div class="page-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul>
+                    <li class="current-page"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var txtSearch = document.getElementById("")
+
+    onfocus = "if(this.value == 'Your Email...') { this.value = ''; }"
+</script>

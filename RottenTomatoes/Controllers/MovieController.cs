@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RottenTomatoes.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,9 +10,13 @@ namespace RottenTomatoes.Controllers
     public class MovieController : Controller
     {
         // GET: Movie
-        public ActionResult Index()
+        public ActionResult Index(string searchQuery)
         {
-
+            if (!string.IsNullOrEmpty(searchQuery))
+            {
+                MovieService service = new MovieService();
+                return View(service.GetMoviesByFilter(searchQuery));
+            }
             return View();
         }
     }
