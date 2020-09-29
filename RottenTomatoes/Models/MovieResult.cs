@@ -13,5 +13,7 @@ namespace RottenTomatoes.Models
 
         [JsonProperty("total")]
         public int Total { get; set; }
+
+        public List<string> RecentSearches { get; set; }
     }
 }
