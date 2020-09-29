@@ -69,7 +69,6 @@ C:\Users\918968\Source\Repos\RottenTomatoes\RottenTomatoes\bin\System.Web.WebPag
 C:\Users\918968\Source\Repos\RottenTomatoes\RottenTomatoes\bin\Newtonsoft.Json.xml
 C:\Users\918968\Source\Repos\RottenTomatoes\RottenTomatoes\bin\Antlr3.Runtime.pdb
 C:\Users\918968\Source\Repos\RottenTomatoes\RottenTomatoes\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\918968\Source\Repos\RottenTomatoes\RottenTomatoes\obj\Debug\RottenTomatoes.csprojAssemblyReference.cache
 C:\Users\918968\Source\Repos\RottenTomatoes\RottenTomatoes\obj\Debug\RottenTomatoes.csproj.CoreCompileInputs.cache
 C:\Users\918968\Source\Repos\RottenTomatoes\RottenTomatoes\obj\Debug\RottenTomatoes.csproj.CopyComplete
 C:\Users\918968\Source\Repos\RottenTomatoes\RottenTomatoes\obj\Debug\RottenTomatoes.dll
