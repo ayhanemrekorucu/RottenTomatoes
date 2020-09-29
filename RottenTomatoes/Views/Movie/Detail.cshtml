@@ -1,0 +1,56 @@
+﻿@model RottenTomatoes.Models.Movie
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="single-product">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading">
+                    <h1>@Model.Title</h1>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="product-slider">
+                    <div id="slider" class="flexslider">
+                        <ul class="slides">
+                            @foreach (var item in Model.PhotoList.PhotoList)
+                            {
+                                <li><img src=@item.Url /></li>
+                            }
+                        </ul>
+                    </div>
+                    <div id="carousel" class="flexslider">
+                        <ul class="slides">
+                            @foreach (var item in Model.PhotoList.PhotoList)
+                            {
+                                <li><img src=@item.Thumbnail /></li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="right-content">
+                    <h4>@Model.Title</h4>
+                    <h6>@Model.Year</h6>
+                    <p>@Model.Synopsis</p>
+                    <div class="down-content">
+                        <div class="categories">
+                            <h6>
+                                Casts: <span>
+                                    @foreach (var item in Model.Casts.CastItems)
+                                    {
+                                        <a href="javascript:void(0)">@item.Person.Name</a> 
+                                    }
+                                </span>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

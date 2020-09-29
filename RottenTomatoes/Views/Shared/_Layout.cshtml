@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="~/Content/assets/css/fontawesome.css">
     <link rel="stylesheet" href="~/Content/assets/css/tooplate-main.css">
     <link rel="stylesheet" href="~/Content/assets/css/owl.css">
+    <link rel="stylesheet" href="~/Content/assets/css/flex-slider.css">
 </head>
 <body>
     <div id="pre-header">
@@ -23,14 +24,14 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="~/Content/assets/images/header-logo.png" alt=""></a>
+            <a class="navbar-brand" href=@Url.Action("Index","Movie")><img src="~/Content/assets/images/header-logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
     </nav>
 
-    <div class="featured-page"></div>
+    
 
     @RenderBody()
 
@@ -64,9 +65,10 @@
     <script src="~/Content/vendor/jquery/jquery.min.js"></script>
     <script src="~/Content/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <script src="~/Content/js/custom.js"></script>
-    <script src="~/Content/js/owl.js"></script>
+    <script src="~/Content/assets/js/custom.js"></script>
+    <script src="~/Content/assets/js/owl.js"></script>
     <script src="~/Content/assets/js/isotope.js"></script>
+    <script src="~/Content/assets/js/flex-slider.js"></script>
 
     <script language="text/Javascript">
         cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field

@@ -20,5 +20,12 @@ namespace RottenTomatoes.Controllers
             }
             return View();
         }
+
+        public ActionResult Detail(int id)
+        {
+            MovieService service = new MovieService();
+            var a = service.GetMovieDetails(id);
+            return View(service.GetMovieDetails(id));
+        }
     }
 }

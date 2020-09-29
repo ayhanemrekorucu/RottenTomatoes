@@ -73,3 +73,4 @@ C:\Users\918968\Source\Repos\RottenTomatoes\RottenTomatoes\obj\Debug\RottenTomat
 C:\Users\918968\Source\Repos\RottenTomatoes\RottenTomatoes\obj\Debug\RottenTomatoes.csproj.CopyComplete
 C:\Users\918968\Source\Repos\RottenTomatoes\RottenTomatoes\obj\Debug\RottenTomatoes.dll
 C:\Users\918968\Source\Repos\RottenTomatoes\RottenTomatoes\obj\Debug\RottenTomatoes.pdb
+C:\Users\918968\Source\Repos\RottenTomatoes\RottenTomatoes\obj\Debug\RottenTomatoes.csprojAssemblyReference.cache

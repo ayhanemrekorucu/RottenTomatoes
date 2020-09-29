@@ -9,7 +9,7 @@ namespace RottenTomatoes.Models
     public class Movie
     {
         [JsonProperty("id")]
-        public string Id { get; set; }
+        public int Id { get; set; }
 
         [JsonProperty("title")]
         public string Title { get; set; }
@@ -23,7 +23,13 @@ namespace RottenTomatoes.Models
         [JsonProperty("posters")]
         public Poster Poster { get; set; }
 
-        [JsonProperty("links")]
-        public Link Link { get; set; }
+        [JsonProperty("photo")]
+        public Photo Photo { get; set; }
+
+        [JsonProperty("photos")]
+        public Photos PhotoList { get; set; }
+
+        [JsonProperty("casts")]
+        public Cast Casts { get; set; }
     }
 }

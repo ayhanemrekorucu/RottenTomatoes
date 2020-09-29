@@ -24,8 +24,8 @@ namespace RottenTomatoes.Services
         {
             WebClient client = new WebClient();
             string json = client.DownloadString(apiUrl + "movies/" + id);
-            MovieResult result = JsonConvert.DeserializeObject<MovieResult>(json);
-            return result.Movies.FirstOrDefault();
+            Movie result = JsonConvert.DeserializeObject<Movie>(json);
+            return result;
         }
 
         internal List<Movie> GetBoxOfficeMovies(string country, int pageLimit)

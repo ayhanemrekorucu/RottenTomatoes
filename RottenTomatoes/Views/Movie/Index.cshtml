@@ -3,6 +3,8 @@
     ViewBag.Title = "Movie Page";
 }
 
+<div class="featured-page"></div>
+
 <div class="subscribe-form" style="margin-bottom: 35px;">
     <div class="container">
         <div class="row">
@@ -32,26 +34,28 @@
 </div>
 
 <div class="featured container no-gutter">
-    <div class="row posts">
-        @if (Model != null && Model.Movies.Count() > 0)
-        {
-            foreach (var movie in Model.Movies)
+
+    @if (Model != null && Model.Movies.Count() > 0)
+    {
+        <div class="row posts">
+            @foreach (var movie in Model.Movies)
             {
-                <div class="item new col-md-4">
-                    <a href="single-product.html">
-                        <div class="featured-item">
-                            <img src="@movie.Poster.Original" alt="" style="height:350px">
-                            <h4>@movie.Title | (@movie.Year)</h4>
-                        </div>
-                    </a>
-                </div>
+            <div class="item new col-md-4">
+                <a href="@Url.Action("Detail",new { @id=movie.Id })">
+                    <div class="featured-item">
+                        <img src="@movie.Poster.Original" alt="" style="height:350px">
+                        <h4>@movie.Title | (@movie.Year)</h4>
+                    </div>
+                </a>
+            </div>
+
             }
-        }
-        else
-        {
-            <h3 style="margin: auto;margin-bottom: 50px;">Please enter a movie name!</h3>
-        }
-    </div>
+        </div>
+    }
+    else
+    {
+        <h3 style="margin: auto;margin-bottom: 50px;text-align:center;border-bottom: solid 1px #ececec;padding-bottom: 20px;">Please enter a movie name!</h3>
+    }
 </div>
 
 <div class="page-navigation">

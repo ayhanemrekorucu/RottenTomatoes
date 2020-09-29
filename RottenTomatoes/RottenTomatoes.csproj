@@ -124,8 +124,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Cast.cs" />
+    <Compile Include="Models\CastItem.cs" />
+    <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\Photo.cs" />
+    <Compile Include="Models\Photos.cs" />
     <Compile Include="Models\Poster.cs" />
-    <Compile Include="Models\Link.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\MovieResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -170,7 +174,6 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\PagedList.css" />
     <Content Include="Content\vendor\bootstrap\css\bootstrap.css" />
     <Content Include="Content\vendor\bootstrap\css\bootstrap.min.css" />
     <Content Include="Content\vendor\bootstrap\js\bootstrap.bundle.js" />
@@ -300,6 +303,7 @@
     <Content Include="Template\vendor\bootstrap\js\bootstrap.min.js.map" />
     <Content Include="Template\vendor\jquery\jquery.min.map" />
     <Content Include="Template\vendor\jquery\jquery.slim.min.map" />
+    <Content Include="Views\Movie\Detail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
